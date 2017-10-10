@@ -1,3 +1,3 @@
 # ng
-angular is frame
-need to write a project
+1. angular is frame
+2. need to write a project
