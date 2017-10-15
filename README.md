@@ -8,3 +8,5 @@
 * [bower](https://segmentfault.com/a/1190000002971135)
 * [nodejs](https://nodejs.org/en/)
 * [npm](https://www.npmjs.com/)
+* [bower]
+* [其他插件]
