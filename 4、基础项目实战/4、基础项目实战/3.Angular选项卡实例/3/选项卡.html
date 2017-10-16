@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="tab_switch">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+    .box input {background:#CCC}
+    .box input.active {background:yellow}
+
+    .box div {width:200px;height:200px;background:#CCC;border:1px solid black;display:none}
+    .box div.cur {display:block}
+    </style>
+    <script src="angular.js" charset="utf-8"></script>
+    <script>
+    let mod=angular.module('tab_switch', []);
+
+    mod.controller('test', function (){
+
+    });
+    </script>
+  </head>
+  <body ng-controller="test">
+    <div class="box">
+      <input type="button" value="1" class="active">
+      <input type="button" value="2">
+      <input type="button" value="3">
+      <div class="cur">dfsdffgsdg</div>
+      <div>dfsdffgsdg</div>
+      <div>dfsdffgsdg</div>
+    </div>
+  </body>
+</html>

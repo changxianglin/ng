@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="tab_switch">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+    .box input {background:#CCC}
+    .box input.active {background:yellow}
+
+    .box div {width:200px;height:200px;background:#CCC;border:1px solid black;display:none}
+    .box div.cur {display:block}
+    </style>
+    <script src="angular.js" charset="utf-8"></script>
+    <script>
+    let mod=angular.module('tab_switch', []);
+
+    mod.controller('test', function ($scope){
+      $scope.now=0;
+      $scope.items={
+        '按钮1': 'dfsdffgsdg',
+        '按钮2': '45terggf',
+        '按钮3': 'redr67567t'
+      }
+    });
+    </script>
+  </head>
+  <body ng-controller="test">
+    <div class="box">
+      <input type="button" ng-repeat="(k,v) in items" value="{{k}}" class="{{$index==now?'active':''}}" ng-click="now=$index">
+      <div ng-repeat="v in items" class="{{$index==now?'cur':''}}">{{v}}</div>
+    </div>
+  </body>
+</html>
