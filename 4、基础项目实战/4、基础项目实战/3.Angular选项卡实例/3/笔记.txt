@@ -1,0 +1,2 @@
+﻿事件、赋值、循环
+ng-click、=、ng-repeat
