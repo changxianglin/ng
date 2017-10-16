@@ -2,6 +2,7 @@
 1. angular is frame
 2. need to write a project
 * [构建参考](https://www.ibm.com/developerworks/cn/web/wa-cn-gulpangular/index.html?ca=drs-&utm_source=tuicool&utm_medium=referral)
+* [可行的构建例子](https://baijiahao.baidu.com/s?id=1562113919773967&wfr=spider&for=pc)
 ### 前后端分离
 * [nginx](http://www.barretlee.com/blog/2016/11/19/nginx-configuration-start/)
 * [gulp](http://www.gulpjs.com.cn/)
