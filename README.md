@@ -4,6 +4,7 @@
 * [构建参考](https://www.ibm.com/developerworks/cn/web/wa-cn-gulpangular/index.html?ca=drs-&utm_source=tuicool&utm_medium=referral)
 * [可行的构建例子](https://baijiahao.baidu.com/s?id=1562113919773967&wfr=spider&for=pc)
 * [教程](http://www.runoob.com/angularjs/angularjs-tutorial.html)
+* [gulp 可行简易教程](http://www.cnblogs.com/2050/p/4198792.html)
 ### 前后端分离
 * [nginx](http://www.barretlee.com/blog/2016/11/19/nginx-configuration-start/)
 * [gulp](http://www.gulpjs.com.cn/)
