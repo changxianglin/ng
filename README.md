@@ -12,3 +12,6 @@
 * [npm](https://www.npmjs.com/)
 * [bower](httP://#/)
 * [其他插件](htp://#/)
+### angularjs & angular-ui-router
+* [router1](http://www.oschina.net/translate/angularjs-multi-step-form-using-ui-router)
+* [router2](http://m.blog.csdn.net/xiaofanku/article/details/50932115)
