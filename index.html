@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>demo index</title>
+        <script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+        <script src="https://cdn.bootcss.com/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
+    </head>
+    <!-- <body ng-app = "routeProvider">
+        <h2>AngularJS 路由应用</h2>
+       <ul>
+           <li><a href="#/">首页</a></li>
+           <li><a href="#/computers">电脑</a></li>
+           <li><a href="#/printers">打印机</a></li>
+           <li><a href="#/blabla">其他</a></li>
+       </ul>
+
+       <div ui-view></div>
+       <script>
+          const app = angular.module('routingDemoApp', ['ui.router'])
+           app.config(['$stateProvider', '$urlRouterProvider',
+        function($stateProvider, $urlRouterProvider){
+
+            $stateProvider
+                    //为主菜单声明abstract属性和template属性
+                    //那么视图就会自动加载到ui-view里
+                    .state('main', {
+                        abstract: true,
+                        url: '/main',
+                        template: '&lt;ui-view /&gt;'
+                    })
+
+                    //通过"."的方式声明子视图
+                    //这样，就能实现嵌套路由了
+                    .state('/test', {
+                        url: '/page_a',
+                        templateUrl: 'views/test.html',
+                        controller: 'pageACtrl'
+                    })
+                    .state('main.page_b', {
+                        url: '/page_b',
+                        templateUrl: 'views/template-b.html',
+                        controller: 'pageBCtrl'
+                    })
+        }]);
+       </script>
+
+
+    </body> -->
+    <!-- <body ng-controller="MainCtrl">
+        <button type="button" name="button"><a href="#/index">button</a></button>
+          <section ui-view></section>
+          <script type="text/javascript">
+          var myApp = angular.module('myApp', ['ui.router'])
+          myApp.config(['$stateProvider'], function($stateProvider) {
+              $stateProvider
+              .state('contacts', {
+                    template: '<h1>My Contacts</h1>'
+                })
+                .state("index", {
+                    url: "/",
+                    templateUrl: "page/test.html"
+                })
+          })
+          </script>
+      </body> -->
+      <!-- <body ng-app = "demo">
+          <a href="http://blog.csdn.net/wolifun_fry/article/details/52262426">demo</a>
+          <a ui-sref="home">Home</a>
+          <a href="#/about">Home</a>
+          <script type="text/javascript">
+          var app = angular.module('demo', ['ui.router']);
+
+            app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
+            $urlRouterProvider.otherwise('/');
+
+            $stateProvider
+                .state('home', {
+                    url:'/',
+                    templateUrl: 'page/home.html',
+                    controller: 'HomeController'
+                })
+                .state('about', {
+                    url:'/about',
+                    templateUrl: 'page/test.html',
+                    controller: 'AboutController'
+                })
+
+            }]);
+                      </script>
+      </body> -->
+      <body>
+          <body >
+    <div ng-app="myApp">
+        <div ui-view></div> <!-- 视图 -->
+    </div>
+  </body>
+
+
+  <script type="text/javascript">
+    //定义模板，并注入ui-router
+    var app = angular.module('myApp', ['ui.router']);
+    //对服务进行参数初始化，这里配stateProvider服务的视图控制
+    app.config(["$stateProvider",  function ($stateProvider) {
+        $stateProvider
+        .state("home", {
+            url: '/',
+            template:'<div>模板内容......</div>'
+        })
+    }]);
+  </script>
+
+      </body>
+</html>
