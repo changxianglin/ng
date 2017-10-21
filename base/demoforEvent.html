@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>index</title>
+  </head>
+  <body>
+    <input type="text" name="" id = "test" value="">
+    <h1 id = "show"></h1>
+  </body>
+
+  <script type="text/javascript">
+    var base = function() {
+      var input = document.querySelector("#test")
+      var showData = document.querySelector("#show")
+      input.addEventListener("keyup", function() {
+        showData.innerHTML = input.value
+      })
+    }
+    base()
+  </script>
+</html>
