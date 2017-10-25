@@ -13,6 +13,7 @@
 * [npm](https://www.npmjs.com/)
 * [bower](httP://#/)
 * [其他插件](htp://#/)
+* [前后端分离文章](http://blog.csdn.net/iamnieo/article/details/50441806)
 ### angularjs & angular-ui-router
 * [router1](http://www.oschina.net/translate/angularjs-multi-step-form-using-ui-router)
 * [router2](http://m.blog.csdn.net/xiaofanku/article/details/50932115)
